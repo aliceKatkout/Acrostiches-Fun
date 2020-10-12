@@ -26,7 +26,7 @@ adjectifs = {
 	"W": ["Wagon", "Wolksvagen", "VraiValeureu.x.se"],
 	"X": ["X-trême", "Xylophone"],
 	"Y": ["Youhou", "Youpi"],
-	"Z": ["Zoyeu.x.se", "Zinzin", "Zoli.e"]
+	"Z": ["Zoyeu.x.se", "Zinzin", "Zoli.e","Zébré.e"]
 }
 
 
@@ -41,4 +41,3 @@ for lettre in lettres:
 	accro = adjectifs.get(lettre)
 	final = random.choice(accro)
 	print(final)
-	
