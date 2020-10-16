@@ -34,13 +34,18 @@ console.log(prenom);
 
 let prenom_maj = prenom.toUpperCase();
 let liste_lettres = Array.from(prenom_maj);
+var liste_adjectifs = [];
+
 for (let lettre of liste_lettres)
 	{
 		let acro = adjectifs[lettre];
 		var acro_random = acro[(Math.random()*acro.length)|0];
-		console.log(acro_random);
-		document.getElementById("reponse").innerHTML = acro_random ;
+		for (var i=0; i<liste_adjectifs.length; i++);
+		liste_adjectifs[i] = "</br>" +acro_random;
+		console.log(liste_adjectifs);
+
 	}
+	document.getElementById("reponse").innerHTML = liste_adjectifs;
 
 }
 /*let newP = document.createElement("p");
