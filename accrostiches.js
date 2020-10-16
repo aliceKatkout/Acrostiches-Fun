@@ -27,14 +27,21 @@ const adjectifs = {
 	Z: ["Zinzin", "Zébré.e", "Zelé.e", "Zoyeux.se"]
 }
 
-let prenom = "Alice" ;
+function mon_acrostiche(){
+var prenom = document.getElementById("mon_prenom").value;
+console.log(prenom);
+//let prenom = "Alice" ;
+
 let prenom_maj = prenom.toUpperCase();
 let liste_lettres = Array.from(prenom_maj);
-
-
-
-for (let lettre of liste_lettres) {
-	let acro = adjectifs[lettre];
-	var acro_random = acro[(Math.random()*acro.length)|0];
-	console.log(acro_random);
+for (let lettre of liste_lettres)
+	{
+		let acro = adjectifs[lettre];
+		var acro_random = acro[(Math.random()*acro.length)|0];
+		console.log(acro_random);
+	}
+document.getElementById("reponse").innerHTML = acro_random ;
 }
+/*let newP = document.createElement("p");
+let newText = document.createTextNode(acro_random);
+newP.textContent = "Votre acrostiche:";*/
