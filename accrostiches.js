@@ -39,8 +39,9 @@ for (let lettre of liste_lettres)
 		let acro = adjectifs[lettre];
 		var acro_random = acro[(Math.random()*acro.length)|0];
 		console.log(acro_random);
+		document.getElementById("reponse").innerHTML = acro_random ;
 	}
-document.getElementById("reponse").innerHTML = acro_random ;
+
 }
 /*let newP = document.createElement("p");
 let newText = document.createTextNode(acro_random);
