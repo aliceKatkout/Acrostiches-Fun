@@ -40,14 +40,12 @@ for (let lettre of liste_lettres)
 	{
 		let acro = adjectifs[lettre];
 		var acro_random = acro[(Math.random()*acro.length)|0];
+		//var mots_decoupes = acro_random.split();
 		for (var i=0; i<liste_adjectifs.length; i++);
 		liste_adjectifs[i] = "</br>" +acro_random;
 		console.log(liste_adjectifs);
-
+		//console.log(mots_decoupes);
 	}
 	document.getElementById("reponse").innerHTML = liste_adjectifs;
 
 }
-/*let newP = document.createElement("p");
-let newText = document.createTextNode(acro_random);
-newP.textContent = "Votre acrostiche:";*/

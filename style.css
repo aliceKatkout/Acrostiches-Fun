@@ -61,11 +61,16 @@ button
   text-align: center;
 }
 
+.box1
+{
+  margin: 0 auto;
+  width: 50%;
+}
+
 #reponse
 {
-  display: block;
   font-family: Arial;
-  flex-direction: column;
+  text-align: left;
 }
 
 #reponse::first-letter
